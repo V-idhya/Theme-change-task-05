@@ -1,0 +1,49 @@
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>East dark mode</title>
+    <link rel="stylesheet" href="style.css">
+    
+        
+ </head>  
+  <body>
+    <header>
+      <label  id="dark-change"></label>
+    </header>
+  
+    <h1>Light and Dark mode</h1>
+      
+    <div class="respon">
+     
+       
+      <nav>
+        
+        <img src="logo1.png">
+    
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">HIRE ME</a></li>
+        </ul>
+        <img src="vidhu.jpg.jpg">
+      </nav>
+      <div class="info">
+        <h1>I'm <span> Vidhya</span></h1>
+        <p>This is my official portfolio website to show my all works <br/>
+            related to web development and UI design.</p>
+        <a href="">Download CV</a>
+      </div>
+    </div>
+
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+  </body>
+</html>
